@@ -121,7 +121,9 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
+  padding-left: 3rem;
+  /* background-color: crimson; */
 }
 
 .div-7 {
@@ -197,6 +199,7 @@ a {
 @media screen and (max-width: 768px) {
   .gridclass, .div-6, .div-7 {
     grid-template-columns: 1fr;
+    
   }
 
   .headerclass1 {
