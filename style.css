@@ -36,6 +36,25 @@ h1{
   margin: 0;
   font-size: 1rem;
 }
+p {
+  font-size: 30px;
+  margin-left: 60px;
+  /* margin-top: -10rem */
+}
+
+b {
+  color: red;
+  font-size-adjust:3;
+  margin-left: 10rem;
+}
+
+h2 {
+  font-size-adjust: 1;
+  margin-left: 20rem;
+  margin-top: -40rem;
+  color: red;
+
+}
 
 #d2 h3 {
   display: flex;
@@ -49,7 +68,8 @@ h1{
 .search-container {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 35rem;
+  margin-left: 10rem;
 }
 
 .search-container input[type="text"] {
@@ -121,9 +141,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  margin-left: 3rem;
-  padding-left: 3rem;
-  /* background-color: crimson; */
+  margin-left: 5rem;
 }
 
 .div-7 {
@@ -137,7 +155,16 @@ main {
   overflow: hidden;
   margin: 10px;
 }
-
+mg-1{
+  border-radius: 70px;
+  margin-top: 6%;
+  /* margin-left: 20rem;
+   */
+   gap: 70rem;
+   margin: 2rem;
+  width: 100%;
+  height: auto;
+}
 #mg-3 {
   object-fit: cover;
   max-width: 1200px;
@@ -170,6 +197,7 @@ a {
 @media screen and (max-width: 1024px) {
   .headerclass1 {
     padding: 20px 5%;
+
   }
 
   .gridclass, .div-6, .div-7 {
@@ -181,27 +209,34 @@ a {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 0;
+  
   }
 
-  #d1 h3, #d2 h3 {
+  #d1 h3, #d2  {
     font-size: 0.8rem;
+    margin-left: 3rem;
+    display: none;
+    /* display: inline-block; */
+
   }
 
   .search-container {
-    margin-left: 0;
+    margin-right: 0;
   }
 
   main {
     margin-top: 80px;
   }
-}
+} 
 
 @media screen and (max-width: 768px) {
   .gridclass, .div-6, .div-7 {
     grid-template-columns: 1fr;
-    
   }
-
+  .search-container {
+    margin-left: 70vw;
+    background-color: red;
+  }
   .headerclass1 {
     flex-direction: column;
     height: auto;
